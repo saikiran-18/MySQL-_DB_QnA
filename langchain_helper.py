@@ -9,7 +9,7 @@ from langchain_experimental.sql import SQLDatabaseChain
 def get_db_chain():
     # Connect to SQLite DB
     db = SQLDatabase.from_uri(
-    "mysql+pymysql://root:1971@localhost/atliq_tshirts"
+    "mysql+pymysql://root:ur_password@localhost/atliq_tshirts"
 )
 
     
@@ -30,5 +30,6 @@ def get_db_chain():
     )
 
     return chain
+
 
 
